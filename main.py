@@ -1,4 +1,5 @@
 from flask import Flask
+import grid
 
 app: Flask = Flask(__name__)
 
@@ -12,3 +13,5 @@ if __name__ == "__main__":
     host = "0.0.0.0"
     port = 5000
     app.run(host, port)
+
+    grid = grid.Grid(1,1,1)
